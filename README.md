@@ -1,6 +1,6 @@
 # WrikeExplorer
 
-A PowerShell module for interacting with the [Wrike REST API](https://developers.wrike.com/).
+<img src="https://github.com/jhendricks123/WrikeExplorer/raw/main/Logo.png" height="100">A PowerShell module for interacting with the [Wrike REST API](https://developers.wrike.com/).
 
 ## Overview
 
