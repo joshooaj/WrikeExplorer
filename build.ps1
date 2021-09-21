@@ -35,11 +35,6 @@ if ($Bootstrap.IsPresent) {
     }
 }
 
-$buildSystem = (Get-BuildVariable).BuildSystem
-if ($buildSystem -ne 'Unknown' -and $null -eq $env:ACCESS_TOKEN -and -not $env:ACCESS_TOKEN.StartsWith('eyJ0dCI6In')) {
-    throw "Test access token is not available"
-}
-
 # Execute psake task(s)
 $psakeFile = './psakeFile.ps1'
 if ($PSCmdlet.ParameterSetName -eq 'Help') {
