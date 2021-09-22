@@ -56,7 +56,7 @@ class WrikeUserProfile {
 }
 
 class WrikeContact {
-    [string]$Id
+    [string] $Id
     [string] $FirstName
     [string] $LastName
     [WrikeUserType] $Type
@@ -76,6 +76,24 @@ class WrikeContact {
     [string] $WorkScheduleId
     [object] $CurrentBillRate
     [object] $CurrentCostRate
+}
+
+enum WrikeRateSource {
+    User
+    JobRole
+}
+
+class WrikeBudgetRateChangeHistory {
+    [WrikeRateSource] $RateSource
+    [double] $RateValue
+    [datetime] $StartDate
+    [datetime] $EndDate
+}
+
+class WrikeContactHistory {
+    [string] $Id
+    [WrikeBudgetRateChangeHistory[]] $BillRateHistory
+    [WrikeBudgetRateChangeHistory[]] $CostRateHistory
 }
 
 class WrikeErrorDescription {

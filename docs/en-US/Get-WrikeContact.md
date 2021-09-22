@@ -13,7 +13,7 @@ Get one or more contact records from the Wrike API
 ## SYNTAX
 
 ```
-Get-WrikeContact [-Me] [-Deleted] [[-Include] <String[]>] [<CommonParameters>]
+Get-WrikeContact [[-ContactId] <String[]>] [-Me] [-Deleted] [[-Include] <String[]>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -49,7 +49,29 @@ PS C:\> Get-WrikeContact -Me
 
 Get the Wrike contact record representing the current Wrike user.
 
+### Example 5
+```powershell
+PS C:\> Get-WrikeContact -ContactId ABC123, ZXY789
+```
+
+Gets the Wrike contact records for two specific contacts based on their contact IDs.
+
 ## PARAMETERS
+
+### -ContactId
+Specifies one or more Wrike contact IDs to be returned from the Wrike contacts API. Limit of 100 per invocation.
+
+```yaml
+Type: String[]
+Parameter Sets: (All)
+Aliases: Id
+
+Required: False
+Position: 0
+Default value: None
+Accept pipeline input: True (ByPropertyName)
+Accept wildcard characters: False
+```
 
 ### -Deleted
 Specifies whether to limit the results either to deleted, or not-deleted users.
@@ -67,7 +89,7 @@ Accept wildcard characters: False
 ```
 
 ### -Include
-Specifies which additional optional fields to populate on the resulting Contact records.
+Specifies which optional fields to populate on the resulting Contact records.
 
 ```yaml
 Type: String[]
@@ -76,7 +98,7 @@ Aliases:
 Accepted values: metadata, workScheduleId, currentBillRate, currentCostRate
 
 Required: False
-Position: 0
+Position: 1
 Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
