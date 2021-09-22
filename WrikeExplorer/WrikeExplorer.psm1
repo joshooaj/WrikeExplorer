@@ -10,6 +10,7 @@ $script:ResponseType = @{
     contacts = [WrikeContact]
     dataExport = [WrikeDataExport]
     dataExportSchema = [WrikeDataExportSchema]
+    contactsHistory = [WrikeContactHistory]
 }
 
 Import-AccessToken
