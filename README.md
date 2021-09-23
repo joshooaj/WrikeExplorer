@@ -41,15 +41,15 @@ Following are all the models established in Wrike API v4, referred to as "method
 | Invitations               | 0%       |
 | Account                   | 0%       |
 | Workflows                 | 0%       |
-| Custom Fields             | 0%       |
-| Folders & Projects        | 0%       |
+| Custom Fields             | 50%      |
+| Folders & Projects        | 50%      |
 | Tasks                     | 0%       |
 | Comments                  | 0%       |
 | Dependencies              | 0%       |
 | Timelogs                  | 0%       |
 | Timelog categories        | 0%       |
 | Attachments               | 0%       |
-| Version                   | 0%       |
+| Version                   | 100%     |
 | IDs                       | 0%       |
 | Colors                    | 0%       |
 | Spaces                    | 0%       |
