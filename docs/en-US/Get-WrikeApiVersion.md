@@ -5,28 +5,28 @@ online version:
 schema: 2.0.0
 ---
 
-# Get-WrikeDataExportSchema
+# Get-WrikeApiVersion
 
 ## SYNOPSIS
-Gets the schema for each of the resources provided in a Wrike data export
+Gets the Wrike API version by querying the Wrike API "version" endpoint
 
 ## SYNTAX
 
 ```
-Get-WrikeDataExportSchema [<CommonParameters>]
+Get-WrikeApiVersion [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-A Wrike data export includes several CSV files. This function returns the resource name, display name, and a list of columns you can expect to find in each CSV including the column name, alias, data type, and foreign key (if present).
+Gets the Wrike API version by querying the Wrike API "version" endpoint
 
 ## EXAMPLES
 
 ### Example 1
 ```powershell
-PS C:\> Get-WrikeDataExportSchema
+PS C:\> Get-WrikeApiVersion
 ```
 
-Gets an array of schema definitions, one for each resource type returned in a Wrike data export.
+Queries the Wrike API for the API version.
 
 ## PARAMETERS
 
@@ -41,7 +41,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### System.Object
 ## NOTES
+At the time of this writing, this API method returns "1.0" despite using the v4 for the base URI of all API calls.
 
 ## RELATED LINKS
 
-[Wrike API Data Export docs](https://developers.wrike.com/api/v4/data-export/)
+[Wrike API Version docs](https://developers.wrike.com/api/v4/version/)

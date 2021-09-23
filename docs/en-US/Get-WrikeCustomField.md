@@ -5,30 +5,45 @@ online version:
 schema: 2.0.0
 ---
 
-# Get-WrikeDataExportSchema
+# Get-WrikeCustomField
 
 ## SYNOPSIS
-Gets the schema for each of the resources provided in a Wrike data export
+Gets custom field records from the current Wrike account
 
 ## SYNTAX
 
 ```
-Get-WrikeDataExportSchema [<CommonParameters>]
+Get-WrikeCustomField [[-Id] <String[]>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-A Wrike data export includes several CSV files. This function returns the resource name, display name, and a list of columns you can expect to find in each CSV including the column name, alias, data type, and foreign key (if present).
+Gets custom field records from the current Wrike account by calling the Wrike customfields endpoint.
 
 ## EXAMPLES
 
 ### Example 1
 ```powershell
-PS C:\> Get-WrikeDataExportSchema
+PS C:\> Get-WrikeCustomField
 ```
 
-Gets an array of schema definitions, one for each resource type returned in a Wrike data export.
+Gets all custom fields
 
 ## PARAMETERS
+
+### -Id
+Specifies the unique ID of an existing custom field record.
+
+```yaml
+Type: String[]
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: 0
+Default value: None
+Accept pipeline input: True (ByPropertyName)
+Accept wildcard characters: False
+```
 
 ### CommonParameters
 This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
@@ -39,9 +54,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
-### System.Object
+### WrikeCustomField
+
 ## NOTES
 
 ## RELATED LINKS
-
-[Wrike API Data Export docs](https://developers.wrike.com/api/v4/data-export/)

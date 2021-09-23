@@ -5,39 +5,39 @@ online version:
 schema: 2.0.0
 ---
 
-# Get-WrikeContactHistory
+# Get-WrikeFolderHistory
 
 ## SYNOPSIS
-Gets one or more contact history records from the Wrike API
+Gets the folder change history for one or more provided folder ID's.
 
 ## SYNTAX
 
 ```
-Get-WrikeContactHistory [-ContactId] <String[]> [[-UpdatedAfter] <DateTime>] [[-UpdatedBefore] <DateTime>]
+Get-WrikeFolderHistory [-Id] <String[]> [[-UpdatedAfter] <DateTime>] [[-UpdatedBefore] <DateTime>]
  [[-Include] <String[]>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Gets one or more contact history records from the Wrike API
+Gets the folder change history for one or more provided folder ID's.
 
 ## EXAMPLES
 
 ### Example 1
 ```powershell
-PS C:\> Get-WrikeContact -Me | Get-WrikeContactHistory
+PS C:\> Get-WrikeFolderHistory -Id IAEWYPFMI7LX4Y3J -Include budget, actualCost
 ```
 
-Gets the contact record representing the user associated with the current permanent access token, and retrieves the contact history records for that Wrike contact.
+Gets the history for a specific folder by ID, and includes the historical values for budget and actual cost.
 
 ## PARAMETERS
 
-### -ContactId
-Specifies one or more Wrike contact IDs to be returned from the Wrike contacts API. Limit of 100 per invocation.
+### -Id
+Specifies the Wrike folder ID associated with one or more records.
 
 ```yaml
 Type: String[]
 Parameter Sets: (All)
-Aliases: Id
+Aliases:
 
 Required: True
 Position: 0
@@ -47,13 +47,13 @@ Accept wildcard characters: False
 ```
 
 ### -Include
-Specifies which optional fields to populate on the resulting Contact records.
+Specifies one or more fields for which to request historical data.
 
 ```yaml
 Type: String[]
 Parameter Sets: (All)
 Aliases:
-Accepted values: billRate, costRate
+Accepted values: actualFees, actualCost, plannedFees, plannedCost, budget
 
 Required: False
 Position: 3
@@ -63,7 +63,7 @@ Accept wildcard characters: False
 ```
 
 ### -UpdatedAfter
-Specifies the inclusive start of the time range for the contact history request.
+Limits results to records that have been updated after the provided date.
 
 ```yaml
 Type: DateTime
@@ -78,7 +78,7 @@ Accept wildcard characters: False
 ```
 
 ### -UpdatedBefore
-Specifies the inclusive end of the time range for the contact history request.
+Limits results to records that were last updated before the provided date.
 
 ```yaml
 Type: DateTime
@@ -97,13 +97,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### None
+### System.String[]
 
 ## OUTPUTS
 
-### System.Object
+### WrikeContactHistory
+
 ## NOTES
 
 ## RELATED LINKS
-
-[Wrike API Contacts docs](https://developers.wrike.com/api/v4/contacts/)
+[Wrike API Folders & Projects docs](https://developers.wrike.com/api/v4/folders-projects/)

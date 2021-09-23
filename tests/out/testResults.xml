@@ -1,149 +1,189 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
-<test-results xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="nunit_schema_2.5.xsd" name="Pester" total="56" errors="0" failures="0" not-run="0" inconclusive="0" ignored="0" skipped="2" invalid="0" date="2021-09-22" time="16:36:53">
-  <environment cwd="C:\Users\jh\source\repos\WrikeExplorer\tests" user-domain="MILESTONE" os-version="10.0.19042" platform="Microsoft Windows 10 Enterprise|C:\WINDOWS|\Device\Harddisk0\Partition3" nunit-version="2.5.8.0" clr-version="Unknown" machine-name="USLT-JH-02" user="jh" />
+<test-results xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="nunit_schema_2.5.xsd" name="Pester" total="76" errors="0" failures="0" not-run="0" inconclusive="0" ignored="0" skipped="2" invalid="0" date="2021-09-23" time="15:38:39">
+  <environment platform="Microsoft Windows 10 Enterprise|C:\WINDOWS|\Device\Harddisk0\Partition3" clr-version="Unknown" os-version="10.0.19042" cwd="C:\Users\jh\source\repos\WrikeExplorer\tests" nunit-version="2.5.8.0" user-domain="MILESTONE" machine-name="USLT-JH-02" user="jh" />
   <culture-info current-culture="en-US" current-uiculture="en-US" />
-  <test-suite type="TestFixture" name="Pester" executed="True" result="Ignored" success="True" time="3.0911" asserts="0" description="Pester">
+  <test-suite type="TestFixture" name="Pester" executed="True" result="Ignored" success="True" time="2.115" asserts="0" description="Pester">
     <results>
-      <test-suite type="TestFixture" name="C:\Users\jh\source\repos\WrikeExplorer\tests\Help.tests.ps1" executed="True" result="Success" success="True" time="1.6302" asserts="0" description="C:\Users\jh\source\repos\WrikeExplorer\tests\Help.tests.ps1">
+      <test-suite type="TestFixture" name="C:\Users\jh\source\repos\WrikeExplorer\tests\Help.tests.ps1" executed="True" result="Success" success="True" time="1.0016" asserts="0" description="C:\Users\jh\source\repos\WrikeExplorer\tests\Help.tests.ps1">
         <results>
-          <test-suite type="TestFixture" name="Test help for Clear-WrikeAccessToken" executed="True" result="Success" success="True" time="0.3489" asserts="0" description="Test help for Clear-WrikeAccessToken">
+          <test-suite type="TestFixture" name="Test help for Clear-WrikeAccessToken" executed="True" result="Success" success="True" time="0.0791" asserts="0" description="Test help for Clear-WrikeAccessToken">
             <results>
-              <test-case description="Help is not auto-generated" name="Test help for Clear-WrikeAccessToken.Help is not auto-generated" time="0.1909" asserts="0" success="True" result="Success" executed="True" />
-              <test-case description="Has description" name="Test help for Clear-WrikeAccessToken.Has description" time="0.0264" asserts="0" success="True" result="Success" executed="True" />
-              <test-case description="Has example code" name="Test help for Clear-WrikeAccessToken.Has example code" time="0.0118" asserts="0" success="True" result="Success" executed="True" />
-              <test-case description="Has example help" name="Test help for Clear-WrikeAccessToken.Has example help" time="0.0129" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Help is not auto-generated" name="Test help for Clear-WrikeAccessToken.Help is not auto-generated" time="0.0108" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Has description" name="Test help for Clear-WrikeAccessToken.Has description" time="0.0052" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Has example code" name="Test help for Clear-WrikeAccessToken.Has example code" time="0.0066" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Has example help" name="Test help for Clear-WrikeAccessToken.Has example help" time="0.0106" asserts="0" success="True" result="Success" executed="True" />
             </results>
           </test-suite>
-          <test-suite type="TestFixture" name="Test help for Get-WrikeContact" executed="True" result="Success" success="True" time="0.4049" asserts="0" description="Test help for Get-WrikeContact">
+          <test-suite type="TestFixture" name="Test help for Get-WrikeApiVersion" executed="True" result="Success" success="True" time="0.131" asserts="0" description="Test help for Get-WrikeApiVersion">
             <results>
-              <test-case description="Help is not auto-generated" name="Test help for Get-WrikeContact.Help is not auto-generated" time="0.0088" asserts="0" success="True" result="Success" executed="True" />
-              <test-case description="Has description" name="Test help for Get-WrikeContact.Has description" time="0.007" asserts="0" success="True" result="Success" executed="True" />
-              <test-case description="Has example code" name="Test help for Get-WrikeContact.Has example code" time="0.0053" asserts="0" success="True" result="Success" executed="True" />
-              <test-case description="Has example help" name="Test help for Get-WrikeContact.Has example help" time="0.0078" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Help is not auto-generated" name="Test help for Get-WrikeApiVersion.Help is not auto-generated" time="0.0073" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Has description" name="Test help for Get-WrikeApiVersion.Has description" time="0.0042" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Has example code" name="Test help for Get-WrikeApiVersion.Has example code" time="0.0051" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Has example help" name="Test help for Get-WrikeApiVersion.Has example help" time="0.0048" asserts="0" success="True" result="Success" executed="True" />
             </results>
           </test-suite>
-          <test-suite type="TestFixture" name="Test help for Get-WrikeContactHistory" executed="True" result="Success" success="True" time="0.4604" asserts="0" description="Test help for Get-WrikeContactHistory">
+          <test-suite type="TestFixture" name="Test help for Get-WrikeContact" executed="True" result="Success" success="True" time="0.1868" asserts="0" description="Test help for Get-WrikeContact">
             <results>
-              <test-case description="Help is not auto-generated" name="Test help for Get-WrikeContactHistory.Help is not auto-generated" time="0.0141" asserts="0" success="True" result="Success" executed="True" />
-              <test-case description="Has description" name="Test help for Get-WrikeContactHistory.Has description" time="0.0063" asserts="0" success="True" result="Success" executed="True" />
-              <test-case description="Has example code" name="Test help for Get-WrikeContactHistory.Has example code" time="0.006" asserts="0" success="True" result="Success" executed="True" />
-              <test-case description="Has example help" name="Test help for Get-WrikeContactHistory.Has example help" time="0.0084" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Help is not auto-generated" name="Test help for Get-WrikeContact.Help is not auto-generated" time="0.0077" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Has description" name="Test help for Get-WrikeContact.Has description" time="0.0055" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Has example code" name="Test help for Get-WrikeContact.Has example code" time="0.0045" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Has example help" name="Test help for Get-WrikeContact.Has example help" time="0.0054" asserts="0" success="True" result="Success" executed="True" />
             </results>
           </test-suite>
-          <test-suite type="TestFixture" name="Test help for Get-WrikeDataExport" executed="True" result="Success" success="True" time="0.5256" asserts="0" description="Test help for Get-WrikeDataExport">
+          <test-suite type="TestFixture" name="Test help for Get-WrikeContactHistory" executed="True" result="Success" success="True" time="0.2367" asserts="0" description="Test help for Get-WrikeContactHistory">
             <results>
-              <test-case description="Help is not auto-generated" name="Test help for Get-WrikeDataExport.Help is not auto-generated" time="0.0086" asserts="0" success="True" result="Success" executed="True" />
-              <test-case description="Has description" name="Test help for Get-WrikeDataExport.Has description" time="0.0062" asserts="0" success="True" result="Success" executed="True" />
-              <test-case description="Has example code" name="Test help for Get-WrikeDataExport.Has example code" time="0.0071" asserts="0" success="True" result="Success" executed="True" />
-              <test-case description="Has example help" name="Test help for Get-WrikeDataExport.Has example help" time="0.0071" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Help is not auto-generated" name="Test help for Get-WrikeContactHistory.Help is not auto-generated" time="0.0077" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Has description" name="Test help for Get-WrikeContactHistory.Has description" time="0.0118" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Has example code" name="Test help for Get-WrikeContactHistory.Has example code" time="0.004" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Has example help" name="Test help for Get-WrikeContactHistory.Has example help" time="0.0047" asserts="0" success="True" result="Success" executed="True" />
             </results>
           </test-suite>
-          <test-suite type="TestFixture" name="Test help for Get-WrikeDataExportSchema" executed="True" result="Success" success="True" time="0.588" asserts="0" description="Test help for Get-WrikeDataExportSchema">
+          <test-suite type="TestFixture" name="Test help for Get-WrikeCustomField" executed="True" result="Success" success="True" time="0.2912" asserts="0" description="Test help for Get-WrikeCustomField">
             <results>
-              <test-case description="Help is not auto-generated" name="Test help for Get-WrikeDataExportSchema.Help is not auto-generated" time="0.0073" asserts="0" success="True" result="Success" executed="True" />
-              <test-case description="Has description" name="Test help for Get-WrikeDataExportSchema.Has description" time="0.0245" asserts="0" success="True" result="Success" executed="True" />
-              <test-case description="Has example code" name="Test help for Get-WrikeDataExportSchema.Has example code" time="0.0049" asserts="0" success="True" result="Success" executed="True" />
-              <test-case description="Has example help" name="Test help for Get-WrikeDataExportSchema.Has example help" time="0.0046" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Help is not auto-generated" name="Test help for Get-WrikeCustomField.Help is not auto-generated" time="0.0079" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Has description" name="Test help for Get-WrikeCustomField.Has description" time="0.0046" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Has example code" name="Test help for Get-WrikeCustomField.Has example code" time="0.0049" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Has example help" name="Test help for Get-WrikeCustomField.Has example help" time="0.0055" asserts="0" success="True" result="Success" executed="True" />
             </results>
           </test-suite>
-          <test-suite type="TestFixture" name="Test help for Get-WrikeExplorerConfig" executed="True" result="Success" success="True" time="0.6331" asserts="0" description="Test help for Get-WrikeExplorerConfig">
+          <test-suite type="TestFixture" name="Test help for Get-WrikeDataExport" executed="True" result="Success" success="True" time="0.3428" asserts="0" description="Test help for Get-WrikeDataExport">
             <results>
-              <test-case description="Help is not auto-generated" name="Test help for Get-WrikeExplorerConfig.Help is not auto-generated" time="0.0056" asserts="0" success="True" result="Success" executed="True" />
-              <test-case description="Has description" name="Test help for Get-WrikeExplorerConfig.Has description" time="0.0045" asserts="0" success="True" result="Success" executed="True" />
-              <test-case description="Has example code" name="Test help for Get-WrikeExplorerConfig.Has example code" time="0.0043" asserts="0" success="True" result="Success" executed="True" />
-              <test-case description="Has example help" name="Test help for Get-WrikeExplorerConfig.Has example help" time="0.0065" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Help is not auto-generated" name="Test help for Get-WrikeDataExport.Help is not auto-generated" time="0.0131" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Has description" name="Test help for Get-WrikeDataExport.Has description" time="0.0042" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Has example code" name="Test help for Get-WrikeDataExport.Has example code" time="0.0053" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Has example help" name="Test help for Get-WrikeDataExport.Has example help" time="0.0052" asserts="0" success="True" result="Success" executed="True" />
             </results>
           </test-suite>
-          <test-suite type="TestFixture" name="Test help for Invoke-WrikeApi" executed="True" result="Success" success="True" time="0.672" asserts="0" description="Test help for Invoke-WrikeApi">
+          <test-suite type="TestFixture" name="Test help for Get-WrikeDataExportSchema" executed="True" result="Success" success="True" time="0.389" asserts="0" description="Test help for Get-WrikeDataExportSchema">
             <results>
-              <test-case description="Help is not auto-generated" name="Test help for Invoke-WrikeApi.Help is not auto-generated" time="0.0061" asserts="0" success="True" result="Success" executed="True" />
-              <test-case description="Has description" name="Test help for Invoke-WrikeApi.Has description" time="0.0037" asserts="0" success="True" result="Success" executed="True" />
-              <test-case description="Has example code" name="Test help for Invoke-WrikeApi.Has example code" time="0.0043" asserts="0" success="True" result="Success" executed="True" />
-              <test-case description="Has example help" name="Test help for Invoke-WrikeApi.Has example help" time="0.008" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Help is not auto-generated" name="Test help for Get-WrikeDataExportSchema.Help is not auto-generated" time="0.0078" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Has description" name="Test help for Get-WrikeDataExportSchema.Has description" time="0.0048" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Has example code" name="Test help for Get-WrikeDataExportSchema.Has example code" time="0.0042" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Has example help" name="Test help for Get-WrikeDataExportSchema.Has example help" time="0.0076" asserts="0" success="True" result="Success" executed="True" />
             </results>
           </test-suite>
-          <test-suite type="TestFixture" name="Test help for Request-WrikeDataExport" executed="True" result="Success" success="True" time="0.7088" asserts="0" description="Test help for Request-WrikeDataExport">
+          <test-suite type="TestFixture" name="Test help for Get-WrikeExplorerConfig" executed="True" result="Success" success="True" time="0.4301" asserts="0" description="Test help for Get-WrikeExplorerConfig">
             <results>
-              <test-case description="Help is not auto-generated" name="Test help for Request-WrikeDataExport.Help is not auto-generated" time="0.0056" asserts="0" success="True" result="Success" executed="True" />
-              <test-case description="Has description" name="Test help for Request-WrikeDataExport.Has description" time="0.0073" asserts="0" success="True" result="Success" executed="True" />
-              <test-case description="Has example code" name="Test help for Request-WrikeDataExport.Has example code" time="0.0043" asserts="0" success="True" result="Success" executed="True" />
-              <test-case description="Has example help" name="Test help for Request-WrikeDataExport.Has example help" time="0.0038" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Help is not auto-generated" name="Test help for Get-WrikeExplorerConfig.Help is not auto-generated" time="0.008" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Has description" name="Test help for Get-WrikeExplorerConfig.Has description" time="0.0034" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Has example code" name="Test help for Get-WrikeExplorerConfig.Has example code" time="0.0059" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Has example help" name="Test help for Get-WrikeExplorerConfig.Has example help" time="0.0045" asserts="0" success="True" result="Success" executed="True" />
             </results>
           </test-suite>
-          <test-suite type="TestFixture" name="Test help for Save-WrikeDataExport" executed="True" result="Success" success="True" time="0.8124" asserts="0" description="Test help for Save-WrikeDataExport">
+          <test-suite type="TestFixture" name="Test help for Get-WrikeFolder" executed="True" result="Success" success="True" time="0.4803" asserts="0" description="Test help for Get-WrikeFolder">
             <results>
-              <test-case description="Help is not auto-generated" name="Test help for Save-WrikeDataExport.Help is not auto-generated" time="0.058" asserts="0" success="True" result="Success" executed="True" />
-              <test-case description="Has description" name="Test help for Save-WrikeDataExport.Has description" time="0.011" asserts="0" success="True" result="Success" executed="True" />
-              <test-case description="Has example code" name="Test help for Save-WrikeDataExport.Has example code" time="0.0066" asserts="0" success="True" result="Success" executed="True" />
-              <test-case description="Has example help" name="Test help for Save-WrikeDataExport.Has example help" time="0.0068" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Help is not auto-generated" name="Test help for Get-WrikeFolder.Help is not auto-generated" time="0.0054" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Has description" name="Test help for Get-WrikeFolder.Has description" time="0.0039" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Has example code" name="Test help for Get-WrikeFolder.Has example code" time="0.0068" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Has example help" name="Test help for Get-WrikeFolder.Has example help" time="0.0074" asserts="0" success="True" result="Success" executed="True" />
             </results>
           </test-suite>
-          <test-suite type="TestFixture" name="Test help for Set-WrikeAccessToken" executed="True" result="Success" success="True" time="0.8625" asserts="0" description="Test help for Set-WrikeAccessToken">
+          <test-suite type="TestFixture" name="Test help for Get-WrikeFolderHistory" executed="True" result="Success" success="True" time="0.5244" asserts="0" description="Test help for Get-WrikeFolderHistory">
             <results>
-              <test-case description="Help is not auto-generated" name="Test help for Set-WrikeAccessToken.Help is not auto-generated" time="0.0062" asserts="0" success="True" result="Success" executed="True" />
-              <test-case description="Has description" name="Test help for Set-WrikeAccessToken.Has description" time="0.0107" asserts="0" success="True" result="Success" executed="True" />
-              <test-case description="Has example code" name="Test help for Set-WrikeAccessToken.Has example code" time="0.0047" asserts="0" success="True" result="Success" executed="True" />
-              <test-case description="Has example help" name="Test help for Set-WrikeAccessToken.Has example help" time="0.0037" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Help is not auto-generated" name="Test help for Get-WrikeFolderHistory.Help is not auto-generated" time="0.0053" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Has description" name="Test help for Get-WrikeFolderHistory.Has description" time="0.0037" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Has example code" name="Test help for Get-WrikeFolderHistory.Has example code" time="0.0041" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Has example help" name="Test help for Get-WrikeFolderHistory.Has example help" time="0.0039" asserts="0" success="True" result="Success" executed="True" />
+            </results>
+          </test-suite>
+          <test-suite type="TestFixture" name="Test help for Invoke-WrikeApi" executed="True" result="Success" success="True" time="0.5734" asserts="0" description="Test help for Invoke-WrikeApi">
+            <results>
+              <test-case description="Help is not auto-generated" name="Test help for Invoke-WrikeApi.Help is not auto-generated" time="0.0066" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Has description" name="Test help for Invoke-WrikeApi.Has description" time="0.0034" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Has example code" name="Test help for Invoke-WrikeApi.Has example code" time="0.0044" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Has example help" name="Test help for Invoke-WrikeApi.Has example help" time="0.0051" asserts="0" success="True" result="Success" executed="True" />
+            </results>
+          </test-suite>
+          <test-suite type="TestFixture" name="Test help for New-WrikeFieldFilter" executed="True" result="Success" success="True" time="0.6261" asserts="0" description="Test help for New-WrikeFieldFilter">
+            <results>
+              <test-case description="Help is not auto-generated" name="Test help for New-WrikeFieldFilter.Help is not auto-generated" time="0.0069" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Has description" name="Test help for New-WrikeFieldFilter.Has description" time="0.0109" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Has example code" name="Test help for New-WrikeFieldFilter.Has example code" time="0.0055" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Has example help" name="Test help for New-WrikeFieldFilter.Has example help" time="0.0077" asserts="0" success="True" result="Success" executed="True" />
+            </results>
+          </test-suite>
+          <test-suite type="TestFixture" name="Test help for Request-WrikeDataExport" executed="True" result="Success" success="True" time="0.6961" asserts="0" description="Test help for Request-WrikeDataExport">
+            <results>
+              <test-case description="Help is not auto-generated" name="Test help for Request-WrikeDataExport.Help is not auto-generated" time="0.0137" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Has description" name="Test help for Request-WrikeDataExport.Has description" time="0.0055" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Has example code" name="Test help for Request-WrikeDataExport.Has example code" time="0.0072" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Has example help" name="Test help for Request-WrikeDataExport.Has example help" time="0.0059" asserts="0" success="True" result="Success" executed="True" />
+            </results>
+          </test-suite>
+          <test-suite type="TestFixture" name="Test help for Save-WrikeDataExport" executed="True" result="Success" success="True" time="0.7518" asserts="0" description="Test help for Save-WrikeDataExport">
+            <results>
+              <test-case description="Help is not auto-generated" name="Test help for Save-WrikeDataExport.Help is not auto-generated" time="0.0134" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Has description" name="Test help for Save-WrikeDataExport.Has description" time="0.0058" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Has example code" name="Test help for Save-WrikeDataExport.Has example code" time="0.0055" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Has example help" name="Test help for Save-WrikeDataExport.Has example help" time="0.0047" asserts="0" success="True" result="Success" executed="True" />
+            </results>
+          </test-suite>
+          <test-suite type="TestFixture" name="Test help for Set-WrikeAccessToken" executed="True" result="Success" success="True" time="0.7938" asserts="0" description="Test help for Set-WrikeAccessToken">
+            <results>
+              <test-case description="Help is not auto-generated" name="Test help for Set-WrikeAccessToken.Help is not auto-generated" time="0.0051" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Has description" name="Test help for Set-WrikeAccessToken.Has description" time="0.0034" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Has example code" name="Test help for Set-WrikeAccessToken.Has example code" time="0.0039" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Has example help" name="Test help for Set-WrikeAccessToken.Has example help" time="0.0084" asserts="0" success="True" result="Success" executed="True" />
             </results>
           </test-suite>
         </results>
       </test-suite>
-      <test-suite type="TestFixture" name="C:\Users\jh\source\repos\WrikeExplorer\tests\Manifest.tests.ps1" executed="True" result="Ignored" success="True" time="0.5344" asserts="0" description="C:\Users\jh\source\repos\WrikeExplorer\tests\Manifest.tests.ps1">
+      <test-suite type="TestFixture" name="C:\Users\jh\source\repos\WrikeExplorer\tests\Manifest.tests.ps1" executed="True" result="Ignored" success="True" time="0.327" asserts="0" description="C:\Users\jh\source\repos\WrikeExplorer\tests\Manifest.tests.ps1">
         <results>
-          <test-suite type="TestFixture" name="Module manifest" executed="True" result="Success" success="True" time="0.1962" asserts="0" description="Module manifest">
+          <test-suite type="TestFixture" name="Module manifest" executed="True" result="Success" success="True" time="0.0809" asserts="0" description="Module manifest">
             <results>
-              <test-suite type="TestFixture" name="Module manifest.Validation" executed="True" result="Success" success="True" time="0.1918" asserts="0" description="Module manifest.Validation">
+              <test-suite type="TestFixture" name="Module manifest.Validation" executed="True" result="Success" success="True" time="0.0727" asserts="0" description="Module manifest.Validation">
                 <results>
-                  <test-case description="Has a valid manifest" name="Module manifest.Validation.Has a valid manifest" time="0.0196" asserts="0" success="True" result="Success" executed="True" />
-                  <test-case description="Has a valid name in the manifest" name="Module manifest.Validation.Has a valid name in the manifest" time="0.0348" asserts="0" success="True" result="Success" executed="True" />
-                  <test-case description="Has a valid root module" name="Module manifest.Validation.Has a valid root module" time="0.0176" asserts="0" success="True" result="Success" executed="True" />
-                  <test-case description="Has a valid version in the manifest" name="Module manifest.Validation.Has a valid version in the manifest" time="0.0174" asserts="0" success="True" result="Success" executed="True" />
-                  <test-case description="Has a valid description" name="Module manifest.Validation.Has a valid description" time="0.0103" asserts="0" success="True" result="Success" executed="True" />
-                  <test-case description="Has a valid author" name="Module manifest.Validation.Has a valid author" time="0.009" asserts="0" success="True" result="Success" executed="True" />
-                  <test-case description="Has a valid guid" name="Module manifest.Validation.Has a valid guid" time="0.0463" asserts="0" success="True" result="Success" executed="True" />
-                  <test-case description="Has a valid copyright" name="Module manifest.Validation.Has a valid copyright" time="0.0081" asserts="0" success="True" result="Success" executed="True" />
-                  <test-case description="Has a valid version in the changelog" name="Module manifest.Validation.Has a valid version in the changelog" time="0.0072" asserts="0" success="True" result="Success" executed="True" />
-                  <test-case description="Changelog and manifest versions are the same" name="Module manifest.Validation.Changelog and manifest versions are the same" time="0.0159" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Has a valid manifest" name="Module manifest.Validation.Has a valid manifest" time="0.008" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Has a valid name in the manifest" name="Module manifest.Validation.Has a valid name in the manifest" time="0.006" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Has a valid root module" name="Module manifest.Validation.Has a valid root module" time="0.0052" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Has a valid version in the manifest" name="Module manifest.Validation.Has a valid version in the manifest" time="0.0052" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Has a valid description" name="Module manifest.Validation.Has a valid description" time="0.0057" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Has a valid author" name="Module manifest.Validation.Has a valid author" time="0.0102" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Has a valid guid" name="Module manifest.Validation.Has a valid guid" time="0.0061" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Has a valid copyright" name="Module manifest.Validation.Has a valid copyright" time="0.0062" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Has a valid version in the changelog" name="Module manifest.Validation.Has a valid version in the changelog" time="0.0051" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Changelog and manifest versions are the same" name="Module manifest.Validation.Changelog and manifest versions are the same" time="0.0045" asserts="0" success="True" result="Success" executed="True" />
                 </results>
               </test-suite>
             </results>
           </test-suite>
-          <test-suite type="TestFixture" name="Git tagging" executed="True" result="Ignored" success="True" time="0.2155" asserts="0" description="Git tagging">
+          <test-suite type="TestFixture" name="Git tagging" executed="True" result="Ignored" success="True" time="0.0958" asserts="0" description="Git tagging">
             <results>
-              <test-case description="Is tagged with a valid version" name="Git tagging.Is tagged with a valid version" time="0.0109" asserts="0" success="False" result="Ignored" executed="False" />
-              <test-case description="Matches manifest version" name="Git tagging.Matches manifest version" time="0.0038" asserts="0" success="False" result="Ignored" executed="False" />
+              <test-case description="Is tagged with a valid version" name="Git tagging.Is tagged with a valid version" time="0.0064" asserts="0" success="False" result="Ignored" executed="False" />
+              <test-case description="Matches manifest version" name="Git tagging.Matches manifest version" time="0.004" asserts="0" success="False" result="Ignored" executed="False" />
             </results>
           </test-suite>
         </results>
       </test-suite>
-      <test-suite type="TestFixture" name="C:\Users\jh\source\repos\WrikeExplorer\tests\Meta.tests.ps1" executed="True" result="Success" success="True" time="0.2884" asserts="0" description="C:\Users\jh\source\repos\WrikeExplorer\tests\Meta.tests.ps1">
+      <test-suite type="TestFixture" name="C:\Users\jh\source\repos\WrikeExplorer\tests\Meta.tests.ps1" executed="True" result="Success" success="True" time="0.2445" asserts="0" description="C:\Users\jh\source\repos\WrikeExplorer\tests\Meta.tests.ps1">
         <results>
-          <test-suite type="TestFixture" name="Text files formatting" executed="True" result="Success" success="True" time="0.0418" asserts="0" description="Text files formatting">
+          <test-suite type="TestFixture" name="Text files formatting" executed="True" result="Success" success="True" time="0.0357" asserts="0" description="Text files formatting">
             <results>
-              <test-suite type="TestFixture" name="Text files formatting.File encoding" executed="True" result="Success" success="True" time="0.0161" asserts="0" description="Text files formatting.File encoding">
+              <test-suite type="TestFixture" name="Text files formatting.File encoding" executed="True" result="Success" success="True" time="0.0202" asserts="0" description="Text files formatting.File encoding">
                 <results>
-                  <test-case description="No text file uses Unicode/UTF-16 encoding" name="Text files formatting.File encoding.No text file uses Unicode/UTF-16 encoding" time="0.0103" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="No text file uses Unicode/UTF-16 encoding" name="Text files formatting.File encoding.No text file uses Unicode/UTF-16 encoding" time="0.0154" asserts="0" success="True" result="Success" executed="True" />
                 </results>
               </test-suite>
-              <test-suite type="TestFixture" name="Text files formatting.Indentations" executed="True" result="Success" success="True" time="0.0368" asserts="0" description="Text files formatting.Indentations">
+              <test-suite type="TestFixture" name="Text files formatting.Indentations" executed="True" result="Success" success="True" time="0.0308" asserts="0" description="Text files formatting.Indentations">
                 <results>
-                  <test-case description="No text file use tabs for indentations" name="Text files formatting.Indentations.No text file use tabs for indentations" time="0.0152" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="No text file use tabs for indentations" name="Text files formatting.Indentations.No text file use tabs for indentations" time="0.0059" asserts="0" success="True" result="Success" executed="True" />
                 </results>
               </test-suite>
             </results>
           </test-suite>
         </results>
       </test-suite>
-      <test-suite type="TestFixture" name="C:\Users\jh\source\repos\WrikeExplorer\tests\WrikeExplorer.tests.ps1" executed="True" result="Success" success="True" time="0.638" asserts="0" description="C:\Users\jh\source\repos\WrikeExplorer\tests\WrikeExplorer.tests.ps1">
+      <test-suite type="TestFixture" name="C:\Users\jh\source\repos\WrikeExplorer\tests\WrikeExplorer.tests.ps1" executed="True" result="Success" success="True" time="0.5419" asserts="0" description="C:\Users\jh\source\repos\WrikeExplorer\tests\WrikeExplorer.tests.ps1">
         <results>
-          <test-suite type="TestFixture" name="Wrike API Success Tests" executed="True" result="Success" success="True" time="0.3558" asserts="0" description="Wrike API Success Tests">
+          <test-suite type="TestFixture" name="Wrike API Success Tests" executed="True" result="Success" success="True" time="0.3096" asserts="0" description="Wrike API Success Tests">
             <results>
-              <test-case description="Get-WrikeContact returns self" name="Wrike API Success Tests.Get-WrikeContact returns self" time="0.3457" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Get-WrikeContact returns self" name="Wrike API Success Tests.Get-WrikeContact returns self" time="0.3017" asserts="0" success="True" result="Success" executed="True" />
             </results>
           </test-suite>
-          <test-suite type="TestFixture" name="Wrike API Error Tests" executed="True" result="Success" success="True" time="0.5656" asserts="0" description="Wrike API Error Tests">
+          <test-suite type="TestFixture" name="Wrike API Error Tests" executed="True" result="Success" success="True" time="0.4895" asserts="0" description="Wrike API Error Tests">
             <results>
-              <test-case description="Responds to invalid tokens correctly" name="Wrike API Error Tests.Responds to invalid tokens correctly" time="0.2039" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Responds to invalid tokens correctly" name="Wrike API Error Tests.Responds to invalid tokens correctly" time="0.1755" asserts="0" success="True" result="Success" executed="True" />
             </results>
           </test-suite>
         </results>
