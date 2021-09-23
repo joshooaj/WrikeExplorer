@@ -29,6 +29,44 @@ Set-WrikeAccessToken -AccessToken $token
 Get-WrikeContact -Me
 ```
 
+### Wrike API Coverage
+
+Following are all the models established in Wrike API v4, referred to as "methods" in the [developer documentation](https://developers.wrike.com/), and the estimated coverage of those methods in this module.
+
+| Model                     | Coverage |
+|---------------------------|----------|
+| Contacts                  | 66%      |
+| Users                     | 0%       |
+| Groups                    | 0%       |
+| Invitations               | 0%       |
+| Account                   | 0%       |
+| Workflows                 | 0%       |
+| Custom Fields             | 0%       |
+| Folders & Projects        | 0%       |
+| Tasks                     | 0%       |
+| Comments                  | 0%       |
+| Dependencies              | 0%       |
+| Timelogs                  | 0%       |
+| Timelog categories        | 0%       |
+| Attachments               | 0%       |
+| Version                   | 0%       |
+| IDs                       | 0%       |
+| Colors                    | 0%       |
+| Spaces                    | 0%       |
+| Data Export               | 100%     |
+| Audit Log                 | 0%       |
+| Access Roles              | 0%       |
+| Async job                 | 0%       |
+| Approvals                 | 0%       |
+| Work Schedules            | 0%       |
+| Work Scehdule exceptions  | 0%       |
+| User Scheduled exceptions | 0%       |
+| Blueprints                | 0%       |
+| EDiscovery                | 0%       |
+| Hourly rates              | 0%       |
+| Special syntax            | 0%       |
+| Errors                    | 100%     |
+
 ## How do I \<blank\>
 
 All functions in WrikeExplorer should be documented and include examples. If you discover otherwise, please raise an issue. To see the documentation and examples for each command, use Get-Help as shown below:
