@@ -1,5 +1,8 @@
 name: CI
 on: [push, pull_request]
+  paths-ignore:
+    - '**/README.md'
+    - '**/CHANGELOG.md'
 jobs:
   test:
     name: Run Tests
