@@ -75,6 +75,7 @@ function Invoke-WrikeApi {
         }
         try {
             $response = Invoke-RestMethod @requestParams
+            Write-Verbose "Processing API response with kind -eq '$($response.kind)'"
             if ($MyInvocation.BoundParameters.ContainsKey('ResponseType')) {
                 if ($response.kind -eq $ResponseType) {
                     $dataType = $script:ResponseType.$ResponseType
@@ -87,7 +88,7 @@ function Invoke-WrikeApi {
                     }
                 }
                 else {
-                    Write-Error "Unexpected response from Wrike api: $($response | ConvertTo-Json)"
+                    Write-Error "Unexpected response from Wrike api: $($response | ConvertTo-Json -Depth 10)"
                 }
             }
             elseif ($response) {
@@ -97,7 +98,7 @@ function Invoke-WrikeApi {
         catch [System.Net.Http.HttpRequestException], [System.InvalidOperationException] {
             $errorRecord = $_
             Write-Verbose "Handling $($errorRecord.Exception.GetType()) exception"
-            if ($errorDescription = ($errorRecord.ErrorDetails.Message | ConvertFrom-Json) -as [WrikeErrorDescription]) {
+            if ($errorDescription = ($errorRecord.ErrorDetails.Message | ConvertFrom-Json -Depth 10) -as [WrikeErrorDescription]) {
                 Write-Verbose "Successfully parsed Wrike API error response"
                 $errorRecord = $errorDescription | ConvertFrom-WrikeErrorDescription
             }

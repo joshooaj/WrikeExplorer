@@ -67,6 +67,16 @@ Following are all the models established in Wrike API v4, referred to as "method
 | Special syntax            | 0%       |
 | Errors                    | 100%     |
 
+## Can I make API calls for models not handled by the module?
+
+Sure, the `Invoke-WrikeApi` can be called directly with a known URI and/or path! For example, you can see [here](https://developers.wrike.com/api/v4/timelogs/) that Wrike has a "timelogs" endpoint on their API. To use it, you can call `Invoke-WrikeApi` like this:
+
+```powershell
+PS C:\> Invoke-WrikeApi -Path timelogs
+```
+
+You should get a `[pscustomobject]` returned by the underlying Invoke-RestMethod cmdlet with a `kind` property indicating the response type (in this case it woudl be "timelogs"), and a `data` array for you to process yourself. The advantage of using `Invoke-WrikeApi` over using Invoke-RestMethod is that the authentication header is provided automatically, and any potential API errors are parsed for you. Plus, if you need to provide URL query parameters, you can provide them as a hashtable and they will be made URL-safe for you.
+
 ## How do I \<blank\>
 
 All functions in WrikeExplorer should be documented and include examples. If you discover otherwise, please raise an issue. To see the documentation and examples for each command, use Get-Help as shown below:

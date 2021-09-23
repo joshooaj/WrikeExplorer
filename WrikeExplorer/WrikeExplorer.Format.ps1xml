@@ -2,7 +2,7 @@
 <Configuration>
     <ViewDefinitions>
       <View>
-        <Name>WrikeContact</Name>
+        <Name>Wrike Contact</Name>
         <ViewSelectedBy>
           <TypeName>WrikeContact</TypeName>
         </ViewSelectedBy>
@@ -38,6 +38,126 @@
                 </TableColumnItem>
                 <TableColumnItem>
                   <PropertyName>CompanyName</PropertyName>
+                </TableColumnItem>
+                <TableColumnItem>
+                  <PropertyName>Type</PropertyName>
+                </TableColumnItem>
+              </TableColumnItems>
+            </TableRowEntry>
+          </TableRowEntries>
+        </TableControl>
+      </View>
+      <View>
+        <Name>Wrike Folder Tree</Name>
+        <ViewSelectedBy>
+          <TypeName>WrikeFolderTree</TypeName>
+        </ViewSelectedBy>
+        <TableControl>
+          <TableHeaders>
+            <TableColumnHeader>
+              <Label>Id</Label>
+            </TableColumnHeader>
+            <TableColumnHeader>
+              <Label>Title</Label>
+            </TableColumnHeader>
+            <TableColumnHeader>
+              <Label>Color</Label>
+            </TableColumnHeader>
+            <TableColumnHeader>
+              <Label>IsProject</Label>
+            </TableColumnHeader>
+          </TableHeaders>
+          <TableRowEntries>
+            <TableRowEntry>
+              <TableColumnItems>
+                <TableColumnItem>
+                  <PropertyName>Id</PropertyName>
+                </TableColumnItem>
+                <TableColumnItem>
+                  <PropertyName>Title</PropertyName>
+                </TableColumnItem>
+                <TableColumnItem>
+                  <PropertyName>Color</PropertyName>
+                </TableColumnItem>
+                <TableColumnItem>
+                  <ScriptBlock>$null -ne $_.Project</ScriptBlock>
+                </TableColumnItem>
+              </TableColumnItems>
+            </TableRowEntry>
+          </TableRowEntries>
+        </TableControl>
+      </View>
+      <View>
+        <Name>Wrike Folder</Name>
+        <ViewSelectedBy>
+          <TypeName>WrikeFolder</TypeName>
+        </ViewSelectedBy>
+        <TableControl>
+          <TableHeaders>
+            <TableColumnHeader>
+              <Label>Id</Label>
+            </TableColumnHeader>
+            <TableColumnHeader>
+              <Label>Title</Label>
+            </TableColumnHeader>
+            <TableColumnHeader>
+              <Label>CreatedDate</Label>
+            </TableColumnHeader>
+            <TableColumnHeader>
+              <Label>UpdatedDate</Label>
+            </TableColumnHeader>
+            <TableColumnHeader>
+              <Label>Color</Label>
+            </TableColumnHeader>
+          </TableHeaders>
+          <TableRowEntries>
+            <TableRowEntry>
+              <TableColumnItems>
+                <TableColumnItem>
+                  <PropertyName>Id</PropertyName>
+                </TableColumnItem>
+                <TableColumnItem>
+                  <PropertyName>Title</PropertyName>
+                </TableColumnItem>
+                <TableColumnItem>
+                  <PropertyName>CreatedDate</PropertyName>
+                </TableColumnItem>
+                <TableColumnItem>
+                  <PropertyName>UpdatedDate</PropertyName>
+                </TableColumnItem>
+                <TableColumnItem>
+                  <PropertyName>Color</PropertyName>
+                </TableColumnItem>
+              </TableColumnItems>
+            </TableRowEntry>
+          </TableRowEntries>
+        </TableControl>
+      </View>
+      <View>
+        <Name>Wrike Custom Field</Name>
+        <ViewSelectedBy>
+          <TypeName>WrikeCustomField</TypeName>
+        </ViewSelectedBy>
+        <TableControl>
+          <TableHeaders>
+            <TableColumnHeader>
+              <Label>Id</Label>
+            </TableColumnHeader>
+            <TableColumnHeader>
+              <Label>Title</Label>
+            </TableColumnHeader>
+            <TableColumnHeader>
+              <Label>Type</Label>
+            </TableColumnHeader>
+          </TableHeaders>
+          <TableRowEntries>
+            <TableRowEntry>
+              <TableColumnItems>
+                <TableColumnItem>
+                  <PropertyName>Id</PropertyName>
+                </TableColumnItem>
+                <TableColumnItem>
+                  <PropertyName>Title</PropertyName>
                 </TableColumnItem>
                 <TableColumnItem>
                   <PropertyName>Type</PropertyName>
