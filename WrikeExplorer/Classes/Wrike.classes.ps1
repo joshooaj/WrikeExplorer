@@ -100,3 +100,9 @@ class WrikeErrorDescription {
     [string] $Error
     [string] $ErrorDescription
 }
+
+
+class WrikeApiVersion {
+    [int] $Major
+    [int] $Minor
+}
