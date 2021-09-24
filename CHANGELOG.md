@@ -13,6 +13,9 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 - Get-WikeFolderHistory
 - New-WrikeFieldFilter
 
+### Changed
+- Breaking change - changed the ContactId parameter to Id on Get-WrikeContact and Get-WrikeContactHistory. Would have added ContactId back as an alias were there more users, but since maybe nobody is using this module yet, I decided against it.
+
 ## [0.1.1] - 2021-09-22
 ### Added
 - New Get-WrikeContactHistory function.

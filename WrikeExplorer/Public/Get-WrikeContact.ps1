@@ -2,12 +2,12 @@ function Get-WrikeContact {
     [CmdletBinding()]
     [OutputType([WrikeContact])]
     param (
-        # Specifies one or more optional ContactId values for known contacts
+        # Specifies one or more optional ID values for known contacts
         [Parameter(ValueFromPipelineByPropertyName)]
+        [ValidateCount(0, 100)]
         [ValidateNotNullOrEmpty()]
-        [Alias('Id')]
         [string[]]
-        $ContactId,
+        $Id,
 
         # Specifies that the Wrike Contact record for the current user should be returned
         [Parameter()]
@@ -28,10 +28,6 @@ function Get-WrikeContact {
     )
 
     process {
-        if ($ContactId.Count -gt 100) {
-            Write-Error 'The Wrike API imposes a limit of 100 contact IDs in a contact history query.'
-            return
-        }
         $query = @{}
         if ($MyInvocation.BoundParameters.ContainsKey('Me')) {
             $query.me = $Me.ToString().ToLower()
@@ -49,8 +45,8 @@ function Get-WrikeContact {
             $query.fields = $json
         }
         $path = "contacts"
-        if ($null -ne $ContactId -and $ContactId.Count -gt 0) {
-            $path += '/' + [string]::Join(',', $ContactId)
+        if ($null -ne $Id -and $Id.Count -gt 0) {
+            $path += '/' + [string]::Join(',', $Id)
         }
         Invoke-WrikeApi -Path $path -ResponseType contacts -Query $query
     }
