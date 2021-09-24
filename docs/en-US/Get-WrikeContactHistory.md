@@ -13,7 +13,7 @@ Gets one or more contact history records from the Wrike API
 ## SYNTAX
 
 ```
-Get-WrikeContactHistory [-ContactId] <String[]> [[-UpdatedAfter] <DateTime>] [[-UpdatedBefore] <DateTime>]
+Get-WrikeContactHistory [-Id] <String[]> [[-UpdatedAfter] <DateTime>] [[-UpdatedBefore] <DateTime>]
  [[-Include] <String[]>] [<CommonParameters>]
 ```
 
@@ -31,13 +31,13 @@ Gets the contact record representing the user associated with the current perman
 
 ## PARAMETERS
 
-### -ContactId
-Specifies one or more Wrike contact IDs to be returned from the Wrike contacts API. Limit of 100 per invocation.
+### -Id
+Specifies one or more ID values for known contacts
 
 ```yaml
 Type: String[]
 Parameter Sets: (All)
-Aliases: Id
+Aliases:
 
 Required: True
 Position: 0

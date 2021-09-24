@@ -2,12 +2,12 @@ function Get-WrikeContactHistory {
     [CmdletBinding()]
     [OutputType([WrikeContactHistory])]
     param (
-        # Specifies one or more optional ContactId values for known contacts
+        # Specifies one or more ID values for known contacts
         [Parameter(Mandatory, ValueFromPipelineByPropertyName)]
+        [ValidateCount(1, 100)]
         [ValidateNotNullOrEmpty()]
-        [Alias('Id')]
         [string[]]
-        $ContactId,
+        $Id,
 
         # Specifies the inclusive start of the time range for the contact history request
         [Parameter()]
@@ -31,10 +31,6 @@ function Get-WrikeContactHistory {
             Write-Error 'UpdatedBefore cannot be less than or equal to UpdatedAfter.'
             return
         }
-        if ($ContactId.Count -gt 100) {
-            Write-Error 'The Wrike API imposes a limit of 100 contact IDs in a contact history query.'
-            return
-        }
 
         $query = @{}
         if ($MyInvocation.BoundParameters.ContainsKey('Include')) {
@@ -52,8 +48,8 @@ function Get-WrikeContactHistory {
         }
 
         $path = 'contacts'
-        if ($null -ne $ContactId -and $ContactId.Count -gt 0) {
-            $path += '/' + [string]::Join(',', $ContactId)
+        if ($null -ne $Id -and $Id.Count -gt 0) {
+            $path += '/' + [string]::Join(',', $Id)
         }
         $path += '/contacts_history'
         Invoke-WrikeApi -Path $path -ResponseType contactsHistory -Query $query
